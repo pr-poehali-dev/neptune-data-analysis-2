@@ -158,11 +158,13 @@ export default function Index() {
         <section id="home" className="relative flex min-w-full snap-start items-center justify-center px-4 py-20">
           {/* Animated wave background */}
           <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-            <svg className="absolute bottom-0 w-full opacity-15" style={{animation: "wave-float 9s ease-in-out infinite"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-              <path fill="rgba(255,255,255,0.12)" d="M0,140 C360,260 1080,40 1440,140 L1440,320 L0,320 Z" />
+            <svg className="absolute bottom-0 w-full opacity-30" style={{animation: "wave-float 9s ease-in-out infinite"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="wg1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="rgba(220,38,38,0.6)"/><stop offset="50%" stopColor="rgba(255,255,255,0.4)"/><stop offset="100%" stopColor="rgba(220,38,38,0.6)"/></linearGradient></defs>
+              <path fill="url(#wg1)" d="M0,140 C360,260 1080,40 1440,140 L1440,320 L0,320 Z" />
             </svg>
-            <svg className="absolute bottom-0 w-full opacity-10" style={{animation: "wave-float 13s ease-in-out infinite reverse"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-              <path fill="rgba(255,255,255,0.07)" d="M0,200 C480,100 960,300 1440,200 L1440,320 L0,320 Z" />
+            <svg className="absolute bottom-0 w-full opacity-20" style={{animation: "wave-float 13s ease-in-out infinite reverse"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="wg2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="rgba(255,255,255,0.5)"/><stop offset="50%" stopColor="rgba(220,38,38,0.4)"/><stop offset="100%" stopColor="rgba(255,255,255,0.5)"/></linearGradient></defs>
+              <path fill="url(#wg2)" d="M0,200 C480,100 960,300 1440,200 L1440,320 L0,320 Z" />
             </svg>
           </div>
           <div className="relative z-10 mx-auto max-w-4xl wave-float">
@@ -187,8 +189,8 @@ export default function Index() {
           {/* Wave divider right */}
           <div className="absolute right-0 top-0 bottom-0 w-32 z-20 pointer-events-none">
             <svg viewBox="0 0 120 900" preserveAspectRatio="none" className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0,0 C60,150 80,300 40,450 C0,600 80,750 0,900 L120,900 L120,0 Z" fill="rgba(0,0,0,0.18)" />
-              <path d="M20,0 C80,120 100,280 60,450 C20,620 90,760 20,900 L120,900 L120,0 Z" fill="rgba(255,255,255,0.03)" />
+              <defs><linearGradient id="wdg1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stopColor="rgba(220,38,38,0.25)"/><stop offset="50%" stopColor="rgba(255,255,255,0.15)"/><stop offset="100%" stopColor="rgba(220,38,38,0.25)"/></linearGradient></defs>
+              <path d="M0,0 C60,150 80,300 40,450 C0,600 80,750 0,900 L120,900 L120,0 Z" fill="url(#wdg1)" />
             </svg>
           </div>
         </section>
@@ -201,8 +203,8 @@ export default function Index() {
           {/* Wave divider right */}
           <div className="absolute right-0 top-0 bottom-0 w-32 z-20 pointer-events-none">
             <svg viewBox="0 0 120 900" preserveAspectRatio="none" className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0,0 C60,150 80,300 40,450 C0,600 80,750 0,900 L120,900 L120,0 Z" fill="rgba(0,0,0,0.18)" />
-              <path d="M20,0 C80,120 100,280 60,450 C20,620 90,760 20,900 L120,900 L120,0 Z" fill="rgba(255,255,255,0.03)" />
+              <defs><linearGradient id="wdg2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stopColor="rgba(255,255,255,0.15)"/><stop offset="50%" stopColor="rgba(220,38,38,0.25)"/><stop offset="100%" stopColor="rgba(255,255,255,0.15)"/></linearGradient></defs>
+              <path d="M0,0 C60,150 80,300 40,450 C0,600 80,750 0,900 L120,900 L120,0 Z" fill="url(#wdg2)" />
             </svg>
           </div>
         </section>
@@ -215,11 +217,13 @@ export default function Index() {
         >
           {/* Animated wave background */}
           <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-            <svg className="absolute bottom-0 w-full opacity-10" style={{animation: "wave-float 8s ease-in-out infinite"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-              <path fill="rgba(255,255,255,0.15)" d="M0,160 C360,260 1080,60 1440,160 L1440,320 L0,320 Z" />
+            <svg className="absolute bottom-0 w-full opacity-25" style={{animation: "wave-float 8s ease-in-out infinite"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="wg3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="rgba(255,255,255,0.5)"/><stop offset="50%" stopColor="rgba(220,38,38,0.5)"/><stop offset="100%" stopColor="rgba(255,255,255,0.5)"/></linearGradient></defs>
+              <path fill="url(#wg3)" d="M0,160 C360,260 1080,60 1440,160 L1440,320 L0,320 Z" />
             </svg>
-            <svg className="absolute bottom-0 w-full opacity-10" style={{animation: "wave-float 11s ease-in-out infinite reverse"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-              <path fill="rgba(255,255,255,0.08)" d="M0,200 C480,100 960,300 1440,200 L1440,320 L0,320 Z" />
+            <svg className="absolute bottom-0 w-full opacity-20" style={{animation: "wave-float 11s ease-in-out infinite reverse"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="wg4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="rgba(220,38,38,0.4)"/><stop offset="50%" stopColor="rgba(255,255,255,0.3)"/><stop offset="100%" stopColor="rgba(220,38,38,0.4)"/></linearGradient></defs>
+              <path fill="url(#wg4)" d="M0,200 C480,100 960,300 1440,200 L1440,320 L0,320 Z" />
             </svg>
           </div>
 
@@ -245,11 +249,13 @@ export default function Index() {
         >
           {/* Animated wave background */}
           <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-            <svg className="absolute top-0 w-full opacity-10" style={{animation: "wave-float 9s ease-in-out infinite"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-              <path fill="rgba(255,255,255,0.12)" d="M0,80 C480,200 960,0 1440,80 L1440,0 L0,0 Z" />
+            <svg className="absolute top-0 w-full opacity-20" style={{animation: "wave-float 9s ease-in-out infinite"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="wg5" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="rgba(220,38,38,0.5)"/><stop offset="50%" stopColor="rgba(255,255,255,0.4)"/><stop offset="100%" stopColor="rgba(220,38,38,0.5)"/></linearGradient></defs>
+              <path fill="url(#wg5)" d="M0,80 C480,200 960,0 1440,80 L1440,0 L0,0 Z" />
             </svg>
-            <svg className="absolute bottom-0 w-full opacity-10" style={{animation: "wave-float 12s ease-in-out infinite reverse"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-              <path fill="rgba(255,255,255,0.08)" d="M0,220 C360,120 1080,320 1440,220 L1440,320 L0,320 Z" />
+            <svg className="absolute bottom-0 w-full opacity-20" style={{animation: "wave-float 12s ease-in-out infinite reverse"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="wg6" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="rgba(255,255,255,0.4)"/><stop offset="50%" stopColor="rgba(220,38,38,0.4)"/><stop offset="100%" stopColor="rgba(255,255,255,0.4)"/></linearGradient></defs>
+              <path fill="url(#wg6)" d="M0,220 C360,120 1080,320 1440,220 L1440,320 L0,320 Z" />
             </svg>
           </div>
 
@@ -273,11 +279,13 @@ export default function Index() {
         >
           {/* Animated wave background */}
           <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-            <svg className="absolute top-0 w-full opacity-10" style={{animation: "wave-float 10s ease-in-out infinite"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-              <path fill="rgba(255,255,255,0.15)" d="M0,100 C360,220 1080,20 1440,100 L1440,0 L0,0 Z" />
+            <svg className="absolute top-0 w-full opacity-20" style={{animation: "wave-float 10s ease-in-out infinite"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="wg7" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="rgba(255,255,255,0.5)"/><stop offset="50%" stopColor="rgba(220,38,38,0.5)"/><stop offset="100%" stopColor="rgba(255,255,255,0.5)"/></linearGradient></defs>
+              <path fill="url(#wg7)" d="M0,100 C360,220 1080,20 1440,100 L1440,0 L0,0 Z" />
             </svg>
-            <svg className="absolute bottom-0 w-full opacity-10" style={{animation: "wave-float 7s ease-in-out infinite reverse"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-              <path fill="rgba(255,255,255,0.1)" d="M0,180 C480,80 960,280 1440,180 L1440,320 L0,320 Z" />
+            <svg className="absolute bottom-0 w-full opacity-20" style={{animation: "wave-float 7s ease-in-out infinite reverse"}} viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="wg8" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="rgba(220,38,38,0.5)"/><stop offset="50%" stopColor="rgba(255,255,255,0.4)"/><stop offset="100%" stopColor="rgba(220,38,38,0.5)"/></linearGradient></defs>
+              <path fill="url(#wg8)" d="M0,180 C480,80 960,280 1440,180 L1440,320 L0,320 Z" />
             </svg>
           </div>
           <div
