@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -132,4 +132,97 @@
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Wave slide transitions */
+@keyframes wave-enter {
+  0% {
+    clip-path: ellipse(0% 60% at 0% 50%);
+    opacity: 0.3;
+  }
+  60% {
+    clip-path: ellipse(110% 80% at 40% 50%);
+    opacity: 1;
+  }
+  100% {
+    clip-path: ellipse(150% 100% at 50% 50%);
+    opacity: 1;
+  }
+}
+
+@keyframes wave-float {
+  0% {
+    transform: translateY(0px) scaleX(1);
+  }
+  25% {
+    transform: translateY(-8px) scaleX(1.01);
+  }
+  50% {
+    transform: translateY(0px) scaleX(1);
+  }
+  75% {
+    transform: translateY(6px) scaleX(0.99);
+  }
+  100% {
+    transform: translateY(0px) scaleX(1);
+  }
+}
+
+@keyframes wave-bg-drift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.wave-section {
+  animation: wave-enter 1.2s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.wave-float {
+  animation: wave-float 7s ease-in-out infinite;
+}
+
+/* Wavy divider between sections */
+.wave-divider {
+  position: absolute;
+  left: -2px;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 20;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.wave-divider::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 40px 120% at 0% 50%,
+    transparent 60%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  animation: wave-float 5s ease-in-out infinite;
+}
+
+/* Scroll container wave feel */
+.wave-scroll-container {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.wave-scroll-container > section {
+  transition: filter 0.6s ease;
+}
+
+.wave-scroll-container > section:not(:first-child) {
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: inset 8px 0 40px rgba(0, 0, 0, 0.3);
 }
