@@ -91,13 +91,13 @@ export function BentoPricing() {
         </div>
         <div className="flex items-center gap-3 p-3">
           <Badge variant="secondary" className="bg-white/10 text-white border-white/20 font-open-sans-custom text-xs">
-            ПРЕМИУМ
+            КЛЮЧЕВОЕ
           </Badge>
           <Badge
             variant="outline"
             className="hidden lg:flex bg-white/5 text-white border-white/20 font-open-sans-custom text-xs"
           >
-            <SparklesIcon className="me-1 size-3" /> Популярный
+            <SparklesIcon className="me-1 size-3" /> Основа исследования
           </Badge>
           <div className="ml-auto">
             <Button size="sm" className="bg-white text-black hover:bg-gray-100 font-open-sans-custom text-xs">
@@ -108,16 +108,15 @@ export function BentoPricing() {
         <div className="flex flex-col p-3 lg:flex-row">
           <div className="pb-2 lg:w-[30%]">
             <span className="font-mono text-3xl font-semibold tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)]">
-              2 000 ₽
+              Гипотеза
             </span>
-            <span className="text-gray-300 text-xs font-open-sans-custom">/мес</span>
           </div>
           <ul className="text-gray-300 grid gap-2 text-xs lg:w-[70%] font-open-sans-custom">
             {[
-              "2 000 ₽ кредитов включено ежемесячно",
-              "Докупайте кредиты сверх месячного лимита",
-              "5x увеличенный лимит вложений",
-              "Импорт дизайнов из популярных инструментов",
+              "Высокая самооценка связана с более высокой успеваемостью",
+              "Мышление роста усиливает академическую мотивацию",
+              "Самооценка и тип мышления взаимно влияют друг на друга",
+              "Комбинация факторов прогнозирует успеваемость точнее, чем каждый по отдельности",
             ].map((f, i) => (
               <li key={i} className="flex items-center gap-2">
                 <Check className="w-[1.05rem] h-[1.05rem] text-white flex-shrink-0" strokeWidth={3} />
@@ -129,47 +128,50 @@ export function BentoPricing() {
       </div>
 
       <PricingCard
-        titleBadge="СТАРТ"
-        priceLabel="0 ₽"
-        features={[
-          "500 ₽ кредитов включено ежемесячно",
-          "Деплой приложений в облако",
-          "Визуальное редактирование",
-          "Синхронизация с Git",
-        ]}
-        className="lg:col-span-3"
-        cta="Начать"
-      />
-
-      <PricingCard
-        titleBadge="КОМАНДА"
-        priceLabel="3 000 ₽"
-        priceSuffix="/чел/мес"
-        features={[
-          "3 000 ₽ кредитов на участника ежемесячно",
-          "Единый биллинг и управление командой",
-          "Общие чаты и совместная работа",
-        ]}
-        className="lg:col-span-4"
-      />
-
-      <PricingCard
-        titleBadge="БИЗНЕС"
-        priceLabel="10 000 ₽"
-        priceSuffix="/чел/мес"
-        features={["3 000 ₽ кредитов на участника ежемесячно", "Отключение обучения по умолчанию", "Полный доступ к API"]}
-        className="lg:col-span-4"
-      />
-
-      <PricingCard
-        titleBadge="КОРПОРАЦИЯ"
-        priceLabel="По запросу"
+        titleBadge="ВЫБОРКА"
+        priceLabel="5–9 классы"
         priceSuffix=""
         features={[
-          "Отключение обучения по умолчанию",
-          "SAML SSO",
-          "Приоритетный доступ",
-          "Персональная поддержка",
+          "Учащиеся общеобразовательных школ",
+          "Возраст 11–16 лет",
+          "Анонимное анкетирование",
+          "Анализ школьной документации",
+        ]}
+        className="lg:col-span-3"
+        cta="Подробнее"
+      />
+
+      <PricingCard
+        titleBadge="МЕТОДИКИ"
+        priceLabel="Диагностика"
+        priceSuffix=""
+        features={[
+          "Шкала самооценки Розенберга",
+          "Опросник типа мышления Дуэк",
+          "Корреляционный анализ данных",
+        ]}
+        className="lg:col-span-4"
+        cta="Читать"
+      />
+
+      <PricingCard
+        titleBadge="РЕЗУЛЬТАТЫ"
+        priceLabel="Выводы"
+        priceSuffix=""
+        features={["Статистические данные по группам", "Графики и диаграммы", "Практические рекомендации"]}
+        className="lg:col-span-4"
+        cta="Смотреть"
+      />
+
+      <PricingCard
+        titleBadge="ПРИМЕНЕНИЕ"
+        priceLabel="Для кого"
+        priceSuffix=""
+        features={[
+          "Педагоги и классные руководители",
+          "Школьные психологи",
+          "Родители учащихся 5–9 классов",
+          "Исследователи в области педагогики",
         ]}
         className="lg:col-span-8"
         cta="Связаться"
